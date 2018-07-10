@@ -1,0 +1,69 @@
+body{
+  color:#777777;
+}
+
+.product-wrapper{
+  width:100%;
+  margin:0;
+  padding:0;
+  display:-moz-box;
+  display:-ms-box;
+  display:-webkit-flexbox;
+  display:-moz-flexbox;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-ms-flex;
+  display:flex;
+  -webkit-box-lines:multiple;
+  -moz-box-lines:multiple;
+  -webkit-flex-wrap:wrap;
+  -moz-flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.product-wrapper > div{
+  text-align: center;
+  width:32%;
+  background:#fff;
+  padding-bottom: 120px;
+  position: relative;
+  background:#eee;
+}
+
+.product-wrapper > div .price{
+  padding:0;
+  position: absolute;
+  bottom:10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.product-wrapper img{
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width:968px) {
+  .product-wrapper > div{
+    width: 47%;
+  }
+}
+
+@media (max-width:568px) {
+  .product-wrapper > div{
+    width: 95%;
+  }
+}
+
+
+
+
+
+/* adminメニューのスタイル */
+.editText-name, .editText-text, .editText-price, .editText-category, .saveItem{
+  display: none;
+}
